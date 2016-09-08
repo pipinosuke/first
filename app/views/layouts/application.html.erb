@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First</title>
+  <title> <%= yield :title %> </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+      <ul>
+        <li><%= link_to  "最初のアプリ",root_path %></li>
+        <li>　<%= link_to "作者",about_path %>　</li>
+      </ul>
 
+  </header>
+  <content>
+    <h1><%= yield :title %>です。</h1>
+
+  </content>
 <%= yield %>
+
+  <footer>
+    <ul>
+      <li><a href="https://github.com/pipinosuke">僕のgithub</a></li>
+      <li><a href="https://twitter.com/pipinosukep">ツイッター</a></li>
+    </ul>
+
+<%= image_tag "04738029.jpg" %>
+  </footer>
+
+
+
 
 </body>
 </html>
