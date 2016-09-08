@@ -20,9 +20,15 @@ header li{background-color: black;
 
 footer{bottom: 0;}
 
-footer li{background-color: white;
+.footer_left{background-color: white;
   float: left;
 }
+
+.footer_right{background-color: black;
+  float: right;
+  color: red;
+  list-style: none;
+  }
 
 content h1{
   color: red;
