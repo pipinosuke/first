@@ -18,17 +18,28 @@ li{  list-style: none;}
 
 header{
   width: auto;
-  background-color: white;
+  background-color: black;
+  height: auto;
 
+}
+
+.header_right{
+  float: right;
+}
+.header_left{
+  float: left;
+  background-color: black;
 }
 
 header li{
   float: left;
   font-size: auto;
-  background-color: black;
 }
 
-footer{bottom: 0;}
+footer li{bottom: 0;
+float: left;
+
+}
 
 .footer_left{background-color: black;
   float: left;

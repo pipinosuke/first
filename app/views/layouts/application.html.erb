@@ -9,10 +9,13 @@
 <body>
   <header>
       <ul>
-        <li><%= link_to  "最初のアプリ",root_path,class:"btn" %></li>
-        <li>　<%= link_to "作者",about_path,class:"btn" %>　</li>
-        <li> <%= link_to "お問い合わせ",contact_path,class:"btn" %> </li>
-      </ul>
+        <div class="header_left">
+          <li><%= link_to  "最初のアプリ",root_path,class:"btn btn-lg" %></li>
+        </div>
+        <div class="header_right">
+          <li>　<%= link_to "作者",about_path,class:"btn" %>　</li>
+          <li> <%= link_to "お問い合わせ",contact_path,class:"btn" %> </li>
+          </div></ul>
 
   </header>
   <content>
@@ -25,8 +28,8 @@
     <div class="footer_left">
 
       <ul>
-        <li><a href="https://github.com/pipinosuke">僕のgithub</a></li>
-        <li><a href="https://twitter.com/pipinosukep">ツイッター</a></li>
+        <li><%= link_to  "僕のgithub","https://github.com/pipinosuke",class:"btn" %></li>
+        <li><%= link_to  "ツイッター","https://twitter.com/pipinosukep",class:"btn" %></li>
       </ul>
     </div>
 
